@@ -23,6 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 #include <unistd.h>
 #include <inttypes.h>
 #include <fcntl.h>
+#include <signal.h>
 #include <time.h>
 #include <mts.h>
 
@@ -153,6 +154,9 @@ void startServer()
 	fflush(fout);
 
 	len = sizeof(struct sockaddr_in);
+
+	/* Ignore death of childs. */
+	signal(SIGCHLD,SIG_IGN);
 
 	/* Accept connections. */
 	while (1)
