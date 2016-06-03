@@ -45,7 +45,7 @@ struct
 FILE *fout;
 
 /**
- * Threats individually each client connected in
+ * Deals individually each client connected in
  * the server.
  * @param sock Current sock.
  * @param client Current client connection.
