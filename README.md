@@ -1,7 +1,7 @@
 ## MyTimeServer
 MTS is a very small and simple time server, that doesn't follow the RFC specification.
 
-###Server
+### Server
 The server was written in C and made to be fast, it's lightweight and can be runned in any computer. 
 By default listen on port 1234 and can run in verbose mode and write a log file if necessary.
 
@@ -15,7 +15,7 @@ Options:
   -h Show this help
 ```
 
-###Client
+### Client
 In the same way, is very simple, it's just get the current time from the server and [can] change the machine time. 
 It also has an interactive mode, if there is a need to getting time "manually".
 
@@ -29,5 +29,5 @@ Options:
   -h Show this help
 ```
 
-###Build
+### Build
 To build both client and server, just type: ```make```, and voilá.
